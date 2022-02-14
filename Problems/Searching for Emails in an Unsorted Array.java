@@ -15,3 +15,29 @@ Output:
         1. If the new entry is found in the array of emails, then the output will be the index at which it is found.
         2. If the new entry is not found in the array of emails, then the output will be -1
 */
+
+
+import java.util.*;
+
+ class Source {
+    public static void main(String[] args) {
+        String[] emails = {"chandler.bing@xyz.com", "ross.geller@xyz.com", "rachel.greene@xyz.com", "joey.tribbiani@xyz.com", "monica.geller@xyz.com", "phoebe.buffay@xyz.com", "sheldon.copper@xyz.com", "marie.george@xyz.com"};
+
+        String NewEmail = "monica.geller@xyz.com";
+
+        int index = -1;
+
+        for (int i=0;i<emails.length;i++){
+            if(emails[i]==NewEmail){
+                index =i;
+                break;
+            }
+
+        }
+        System.out.println(index);
+
+
+    }
+
+
+}
